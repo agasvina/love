@@ -9,7 +9,7 @@ import com.parse.ParseInstallation;
 import com.parse.ParseUser;
 import com.parse.PushService;
 
-public class RibbitApplication extends Application {
+public class LoveApplication extends Application {
 	
 	@Override
 	public void onCreate() { 
@@ -18,7 +18,7 @@ public class RibbitApplication extends Application {
 	    	"SJayMH4VR2znnbmNZpu1pdT47WO53AqcGo13Q65E", 
 	    	"6kVW1YWEj2i6gNEEByZ9aqEgYv4vIU45gcGUaFDF");
 	    
-	    //PushService.setDefaultPushCallback(this, MainActivity.class);
+	   //PushService.setDefaultPushCallback(this, MainActivity.class);
 	    PushService.setDefaultPushCallback(this, MainActivity.class, 
 	    		R.drawable.ic_stat_ic_launcher);
 	    ParseInstallation.getCurrentInstallation().saveInBackground();

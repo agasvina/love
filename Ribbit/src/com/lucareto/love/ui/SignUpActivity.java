@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.lucareto.love.R;
-import com.lucareto.love.RibbitApplication;
+import com.lucareto.love.LoveApplication;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -81,7 +81,7 @@ public class SignUpActivity extends Activity {
 							
 							if (e == null) {
 								// Success!
-								RibbitApplication.updateParseInstallation(
+								LoveApplication.updateParseInstallation(
 										ParseUser.getCurrentUser());
 								
 								Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
